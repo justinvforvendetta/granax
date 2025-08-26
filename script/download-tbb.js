@@ -35,14 +35,14 @@ exports.getTorBrowserLink = function(platform, version, callback) {
 
     switch (platform) {
       case 'win32':
-        return `${link}/torbrowser-install-${v}_en-US.exe`;
+        return `${link}/tor-browser-windows-i686-portable-${v}.exe`;
       case 'darwin':
-        return `${link}/TorBrowser-${v}-osx64_en-US.dmg`;
+        return `${link}/tor-browser-macos-${v}.dmg`;
       case 'android':
       case 'linux':
         return os.arch() === 'x64'
-          ? `${link}/tor-browser-linux64-${v}_en-US.tar.xz`
-          : `${link}/tor-browser-linux32-${v}_en-US.tar.xz`
+          ? `${link}/tor-browser-linux-x86_64-${v}.tar.xz`
+          : `${link}/tor-browser-linux-i686-${v}.tar.xz`
       default:
         throw new Error(`Unsupported platform "${platform}"`);
     }
