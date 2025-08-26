@@ -54,7 +54,7 @@
   },
   "dependencies": {
     "async": "^2.6.3",
-    "latest-torbrowser-version": "iohzrd/latest-torbrowser-version",
+    "latest-torbrowser-version": "^14.5.6",
     "merge": "^2.1.1",
     "mkdirp": "^0.5.5",
     "mv": "^2.1.1",
